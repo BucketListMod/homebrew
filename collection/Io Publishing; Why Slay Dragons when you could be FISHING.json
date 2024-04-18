@@ -1,0 +1,2044 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "WhySlayDragonswhenyoucouldbeFISHING",
+				"abbreviation": "WSDwycbF",
+				"full": "Why Slay Dragons when you could be FISHING",
+				"version": "1.02"
+			}
+		],
+		"dateAdded": 0,
+		"dateLastModified": 0
+	},
+	"item": [
+		{
+			"name": "Enchanted Mounted Fish",
+			"rarity": "uncommon",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"value": 20000,
+			"entries": [
+				"This fish is magically preserved and mounted on a wooden plaque, with a small metal label denoting the size and weight as well as the date it was caught.",
+				"By pressing the metal label on the plaque, the fish will animate and a popular tavern song will play from it. The fish will move its head and mouth along with the music to 'sing.'",
+				"{@note Potential Ingredients: Fish Parts}."
+			]
+		}
+	],
+	"magicvariant": [
+		{
+			"name": "Environmental Bobber",
+			"rarity": "varies",
+			"inherits": {
+				"source": "WhySlayDragonswhenyoucouldbeFISHING",
+				"page": 154,
+				"entries": [
+					"Mechanically crafted to provide an angler a key advantage in fishing, to give you a last-minute chance to reel in a mighty catch.",
+					{
+						"type": "list",
+						"items": [
+							"After making a Fishing Check, but before determining the outcome of the result, you can activate the Environmental Bobber to roll an additional d20.",
+							"You choose which of the d20s is used for Fishing Check.",
+							"After the Environmental Bobber is used, it is destroyed."
+						]
+					},
+					"Potential Ingredients: Fish Parts from the corresponding environment."
+				]
+			}
+		}
+	],
+	"monster": [
+		{
+			"name": "Boot Mimic",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"page": 302,
+			"size": [
+				"T"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d4 + 16",
+				"average": 36
+			},
+			"speed": {
+				"walk": 10
+			},
+			"str": 14,
+			"dex": 12,
+			"con": 15,
+			"int": 5,
+			"wis": 13,
+			"cha": 8,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"immune": [
+				"acid"
+			],
+			"conditionImmune": [
+				"prone"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "False Appearance (Object Form Only)",
+					"entries": [
+						"While the mimic remains motionless, it is indistinguishable from an ordinary object."
+					]
+				},
+				{
+					"name": "Adhesive (Object Form Only)",
+					"entries": [
+						"The mimic adheres to anything that touches it. A Huge or smaller creature adhered to the mimic is also {@condition grappled} by it (escape {@dc 12}). Ability checks made to escape this grapple have disadvantage."
+					]
+				},
+				{
+					"name": "Grappler",
+					"entries": [
+						"The mimic has advantage on attack rolls against any creature {@condition grappled} by it."
+					]
+				},
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"The mimic can use its action to polymorph into an object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}1 piercing damage plus 2 ({@damage 1d4}) acid damage."
+					]
+				}
+			],
+			"traitTags": [
+				"False Appearance",
+				"Shapechanger",
+				"Spider Climb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"shortName": "mimic",
+			"skill": {
+				"stealth": "+5"
+			},
+			"conditionInflict": [
+				"grappled"
+			],
+			"environment": [
+				"grassland"
+			],
+			"fluff": {
+				"entries": [
+					"Deceptive and sneaky, the Boot Mimic bides its time waiting for an angler's hook. It is indistinguishable from a typical stray boot until pulled close enough to attack unsuspecting prey. Once in range, it will wrap its tongue around its target as an anchor and viciously bite with a mouth full of razor-sharp teeth."
+				]
+			},
+			"damageTags": [
+				"A",
+				"P"
+			]
+		},
+		{
+			"name": "Venomserpent",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"page": 315,
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 36",
+				"average": 90
+			},
+			"speed": {
+				"swim": 30,
+				"walk": 30
+			},
+			"str": 2,
+			"dex": 18,
+			"con": 16,
+			"int": 1,
+			"wis": 12,
+			"cha": 3,
+			"passive": 13,
+			"cr": "4",
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"skill": {
+				"perception": "+3"
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Venomserpent makes 2 Bite attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage, and the target must make a Constitution Saving Thrown ({@dc 14}). On a failure, the target takes 7 ({@damage 2d6}) Poison Damage. On a success, the target takes half as much damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"environment": [
+				"grassland"
+			],
+			"fluff": {
+				"entries": [
+					"The Venomserpent is a violent creature of the plains waters, standing out from its brethren by being particularly ruthless and aggressive. It is the apex predator of its environment, using swift movements to ambush and devour lesser fish. It is no different when faced by an angler, as it will spare no mercy and ferociously sink its teeth into those who reel it in. Its reflexes are quick enough to lash out multiple times in a short span, earning the fear and ire of many anglers.",
+					"The Venomserpent's teeth are needle-like and sharp, which, on its own, would threaten those who encounter it. However, the danger of this fish comes from the venom packed within its mouth. Anyone unprepared for the potency of its bite is sure to be overwhelmed and taken by surprise as the venom eats away at their flesh.",
+					"This snake-like creature lives in the murky depths of the water, with sharp crimson-gray scales that blend in with underwater flora. The Venomserpent is the apex fishing predator of the plains and only appears when feasting on smaller fish. It is a rather smart creature and is typically wise to hooks and other fishing techniques, making it a challenging catch for any angler.",
+					"The meat of the Venomserpent is said to be naturally spicy, often paired with sweet fruits or drinks to compensate."
+				]
+			},
+			"damageTags": [
+				"P"
+			]
+		},
+		{
+			"name": "Anvil Ironfish",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"environment": [
+				"grassland"
+			],
+			"fluff": {
+				"entries": [
+					"A square-shaped fish with sharp black and gray scales and weighing around 100 lbs. This fish lives at the very bottom of bodies of water, with its weight making it nigh impossible for anglers to reach. This fish was the result of arcane-infused ores underneath its habitat.",
+					"The Anvil Ironfish earned its name due to its popularity with blacksmiths. Its iron-like scales and bones are enchanted with the arcane magic of its environment and made it a popular metal substitute in crafting magic weapons."
+				]
+			}
+		},
+		{
+			"name": "Barbaric Bluegill",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"size": [
+				"T"
+			],
+			"type": "beast",
+			"environment": [
+				"grassland"
+			],
+			"fluff": {
+				"entries": [
+					"The Barbaric Bluegill is a fairly routine catch for anglers, with scales of a green hue and a streak of blue running across its gills. Oddly bulky for a fish, this aggressive creature uses its heft to its advantage and tends to be a bully in its territory.",
+					"Surprisingly tasty, the Bluegill holds a firm, flaky texture, with a bulk that leaves those that eat it quite full."
+				]
+			}
+		},
+		{
+			"name": "Beaconfish",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"size": [
+				"T"
+			],
+			"type": "beast",
+			"environment": [
+				"grassland"
+			],
+			"fluff": {
+				"entries": [
+					"A flowing fish with orange and yellow scales that glows a gentle light in the nighttime hours. To avoid predators, the Beaconfish only comes out in periods where its unnatural glow might otherwise be masked.",
+					"The scales of the Beaconfish are commonly used in hamlets on the plains as a source of light, which can burn for long periods without the need for wax or oil."
+				]
+			}
+		},
+		{
+			"name": "Bell-Tailed Frightfish",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"size": [
+				"T"
+			],
+			"type": "beast",
+			"trait": [
+				{
+					"name": "Companion",
+					"entries": [
+						"You can spend 8 hours bonding with the Bell-Tailed Frightfish to make it a companion. Once the Bell-Tailed Frightfish is your companion, you can attempt to train it to act as a form of security while it's in a fishbowl, with a Wisdom ({@skill Animal Handling}) Check ({@dc 15}).",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "On Failure",
+									"entry": "The animal is not trained, and training cannot be re-attempted until the next dawn."
+								},
+								{
+									"type": "item",
+									"name": "On Success",
+									"entry": "When trained, this fish releases a bleating noise when in the presence of an unknown intrusion, acting as the {@spell alarm} spell if a Small size or larger creature enters a 20 ft. cube near the fish's bowl. After it does this, it cannot do it again until dawn."
+								}
+							]
+						}
+					]
+				}
+			],
+			"environment": [
+				"grassland"
+			],
+			"fluff": {
+				"entries": [
+					"A seldom seen magical fish with bugged-out eyes, the Bell-Tailed Frightfish is a shy, yet charming little creature. It has yellow and black scales all over its bulbous body, and gives the appearance of a chiming bell with its back fin while swimming. This creature is easily spooked and rarely leaves the safety of its den except to quickly find food before retreating again.",
+					"Although the Bell-Tailed Frightfish is somewhat scarce, those that are caught are either kept as pets or used as security for the folk of the plains. Some travelers also keep them in portable containers during long trips out in the open wilderness for safety."
+				]
+			}
+		},
+		{
+			"name": "Boulderbass",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"size": [
+				"T"
+			],
+			"type": "beast",
+			"environment": [
+				"grassland"
+			],
+			"fluff": {
+				"entries": [
+					"A triangular-shaped fish with dull gray scales and sharp rock fins, this creature has a surprising amount of weight for its size.",
+					"With some simple spices and grilling, the Boulderbass can make for a tasty dish, and the fish's dense meat makes it a popular staple in taverns. Often the hope of many anglers for a big payout, Boulderbass is the most requested plains fish in marketplaces."
+				]
+			}
+		},
+		{
+			"name": "Chimera Chub",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"size": [
+				"T"
+			],
+			"type": "beast",
+			"environment": [
+				"grassland"
+			],
+			"fluff": {
+				"entries": [
+					"A frequently caught fish with scales of a light blue hue. Three identical heads rest at the top of this fish - each more stupid than the last - that sputter horrifying gulps when excited. Its three heads will often fight for food, making it an easy catch as one (or more) of the heads will be easily tempted by a baited hook.",
+					"Its pungent, fishy taste can be a bit overwhelming, and it doesn't have much meat due to its odd bone structure. Thus, it is often scoffed at in markets when presented by an angler. It's usually best to throw these back in the water, but it can be mixed with other fish for a single meal's worth of rations if an angler is desperate for something to eat."
+				]
+			}
+		},
+		{
+			"name": "Crimsonfang Crawfish",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"size": [
+				"T"
+			],
+			"type": "beast",
+			"environment": [
+				"grassland"
+			],
+			"fluff": {
+				"entries": [
+					"A little freshwater crustacean with a blood-red carapace and two fang-like appendages jutting from its jaw. These fangs dig into unfortunate amphibians and draw nutrients through a parasitic bond that eventually kills the host, but gives the Crimsonfang Crawfish a macabre, yet amazing flavor when cooked.",
+					"Used in many popular dishes with flavorful seasonings and often boiled during festivals, this crustacean is frequently requested in bulk."
+				]
+			}
+		},
+		{
+			"name": "Dazzling Carp",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"environment": [
+				"grassland"
+			],
+			"fluff": {
+				"entries": [
+					"A scarcely seen magical fish with scales that shine bright as a rainbow in the sky. Rarely leaving the safety of the depths of its pond due to the reflective color of its scales, the Dazzling Carp is one of the most challenging fish to catch in the plains.",
+					"Not only is it a popular pet in port towns of the wealthy for its flashy display, but this fish is also favored by artists. Their scales are capable of making remarkable paints of vivid color that mere dyes could only hope to achieve."
+				]
+			}
+		},
+		{
+			"name": "Deathskull Dace",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"size": [
+				"T"
+			],
+			"type": "beast",
+			"environment": [
+				"grassland"
+			],
+			"fluff": {
+				"entries": [
+					"An otherwise typical fish with rust-brown scales, but where one might expect the head of a fish, instead is a skull - which somehow manages to consume food as normal. Rumors speak of a necromantic angler cursing this species after a bad fishing trip.",
+					"Despite its strange condition, the Deathskull Dace is abundant and a staple food fish of modest folk. When cooked, it has little flavor on its own, but even the simplest of cooks can prepare this fish for a tasty meal due to its palatable flexibility."
+				]
+			}
+		},
+		{
+			"name": "Dragonkoi",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"size": [
+				"T"
+			],
+			"type": "beast",
+			"trait": [
+				{
+					"name": "Boon",
+					"entries": [
+						"If released right after caught, the Dragonkoi will teach the angler the Fishing Technique Altered Fortune. An angler can only be taught this once."
+					]
+				},
+				{
+					"name": "Bad Fortune",
+					"entries": [
+						"If this fish is killed by the angler, they will suffer 10 Fishing Ordeals."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Altered Fortune",
+					"entries": [
+						"Once this Fishing Encounter, if the angler would succeed against the Catch DC, the Dragonkoi can force the angler to reroll the Fishing Check. The angler must take the second result."
+					]
+				}
+			],
+			"environment": [
+				"grassland"
+			],
+			"fluff": {
+				"entries": [
+					"This elusive fish has vivid orange and white opalescent scales patterned into a diamond. Their fins and tail glimmer in the water, trailing behind them like an elegant gown.",
+					"Legends tell of the mystical koi, a fish that once traveled up the rivers of the gods and leaped through the dragon's gate, transforming into a golden dragon that ascended the heavens above. As a result, the Dragonkoi is a popular fish among royalty, often occupying ponds in their gardens."
+				]
+			}
+		},
+		{
+			"name": "Gatorfang Gar",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"action": [
+				{
+					"name": "Thrash",
+					"entries": [
+						"Once this Fishing Encounter, if the angler would succeed against the Catch DC, the fish begins to thrash about. The Gatorfang Gar's Catch DC becomes 14 during the next Fishing Check."
+					]
+				}
+			],
+			"environment": [
+				"grassland"
+			],
+			"fluff": {
+				"entries": [
+					"A massive fish with sparkling gold and silver scales, this gar can grow to be the size of a young alligator. Its mouth is more akin to an elongated snout, with faux teeth that appear more frightening than they really are. Heavy, yet never aggressive, this is a challenging fish to catch in otherwise shallow bodies of water.",
+					"The scales of a Gatorfang Gar are highly valued by the textile and jewelry industries, selling for a high price. Such scales are used to create flashy clothing and jewelry articles, mimicking gold and silver at a much cheaper price point."
+				]
+			}
+		},
+		{
+			"name": "Mirrorscale Minnow",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"size": [
+				"T"
+			],
+			"type": "beast",
+			"environment": [
+				"grassland"
+			],
+			"fluff": {
+				"entries": [
+					"A frequently seen fish, usually the size of an angler's pinky. With clear, mirror-like scales that act as a reflective surface, this minnow often attracts curious fish seeing their reflections for the first time. This unfortunately ends with the minnow becoming said fish's dinner, more often than not.",
+					"Slight and bony, the Mirrorscale Minnow provides little nutritional value when eaten and is often only consumed if there is no readily available alternative. However, this fish can be used as bait when used fresh to help catch a more substantial meal."
+				]
+			}
+		},
+		{
+			"name": "Pearlscale Goldfish",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"size": [
+				"T"
+			],
+			"type": "beast",
+			"environment": [
+				"grassland"
+			],
+			"fluff": {
+				"entries": [
+					"An unusual, minuscule fish with bright orange scales and a flowing golden tail fin that dances as it swims. Patches of its scales appear to be fitted with opulent pearls, but in reality are little more than a hardened, hollow scale used to attract mates.",
+					"Popular as a pet due to its long lifespan and decorative body, the Pearlscale Goldfish is a typical prize in festivals, attracting many onlookers to games of chance."
+				]
+			}
+		},
+		{
+			"name": "Rainbow Frog",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"size": [
+				"T"
+			],
+			"type": "beast",
+			"environment": [
+				"grassland"
+			],
+			"fluff": {
+				"entries": [
+					"A slimy green-skinned amphibian with robust legs that allow it to jump great distances. This petite creature can fit into the palm of a hand easily. When a Rainbow Frog is happy and secure in its environment, its skin will shift between every color of the rainbow every few seconds, leaving a dazzling trail of color behind itself when it leaps. This feat is rarely seen in nature due to the constant threat of predators, but when well cared for in captivity it may flash these colors as a sign of comfort and trust."
+				]
+			}
+		},
+		{
+			"name": "Steamturtle",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"environment": [
+				"grassland"
+			],
+			"fluff": {
+				"entries": [
+					"A soft-shelled turtle with vibrant green skin and a brown patterned shell that surrounds its body. Roughly the size of a housecat in adulthood, Steamturtles are easily spotted due to the burst of hot steam that comes from its mouth on a regular basis.",
+					"Steamturtles are highly valued in local communities, as they provide a cheap source of warmth for households in the winter, courtesy of their steam breath."
+				]
+			}
+		},
+		{
+			"name": "Whiskerfish",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"environment": [
+				"grassland"
+			],
+			"fluff": {
+				"entries": [
+					"This unusual fish has a slimy mucus-coated exterior and long whisker-like appendages that protrude from its mouth. It is a massive fish that is as tall and wide as a typical angler, making it have a rather imposing presence upon first sighting. Wise to the antics of beasts and humanoids that hunt it, the Whiskerfish has long learned to feed from the bottom of their habitat, and typically sink rather than float on the water."
+				]
+			}
+		},
+		{
+			"name": "Aboleth Behemoth",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"page": 316,
+			"size": [
+				"L"
+			],
+			"type": "aberration",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "28d12 + 56",
+				"average": 238
+			},
+			"speed": {
+				"walk": 10,
+				"swim": 40
+			},
+			"str": 21,
+			"dex": 9,
+			"con": 15,
+			"int": 18,
+			"wis": 15,
+			"cha": 18,
+			"save": {
+				"con": "+6",
+				"int": "+8",
+				"wis": "+6"
+			},
+			"skill": {
+				"history": "+12",
+				"perception": "+10"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 20,
+			"languages": [
+				"Deep Speech",
+				"telepathy 120 ft."
+			],
+			"cr": "14",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The aboleth can breathe air and water."
+					]
+				},
+				{
+					"name": "Mucous Cloud",
+					"entries": [
+						"While underwater, the aboleth is surrounded by transformative mucus. A creature that touches the aboleth or that hits it with a melee attack while within 5 feet of it must make a {@dc 14} Constitution saving throw. On a failure, the creature is diseased for {@dice 1d4} hours. The diseased creature can breathe only underwater."
+					]
+				},
+				{
+					"name": "Probing Telepathy",
+					"entries": [
+						"If a creature communicates telepathically with the aboleth, the aboleth learns the creature's greatest desires if the aboleth can see the creature."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The aboleth makes four tentacle attacks."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}12 ({@damage 2d6 + 5}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 15} Constitution saving throw or become diseased. The disease has no effect for 1 minute and can be removed by any magic that cures disease. After 1 minute, the diseased creature's skin becomes translucent and slimy, the creature can't regain hit points unless it is underwater, and the disease can be removed only by {@spell heal} or another disease-curing spell of 6th level or higher. When the creature is outside a body of water, it takes 6 ({@damage 1d12}) acid damage every 10 minutes unless moisture is applied to the skin before 10 minutes have passed."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}15 ({@damage 3d6 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Enthrall (3/Day)",
+					"entries": [
+						"The aboleth targets one creature it can see within 30 feet of it. The target must succeed on a {@dc 14} Wisdom saving throw or be magically {@condition charmed} by the aboleth until the aboleth dies or until it is on a different plane of existence from the target. The {@condition charmed} target is under the aboleth's control and can't take reactions, and the aboleth and the target can communicate telepathically with each other over any distance.",
+						"Whenever the {@condition charmed} target takes damage, the target can repeat the saving throw. On a success, the effect ends. No more than once every 24 hours, the target can also repeat the saving throw when it is at least 1 mile away from the aboleth."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The aboleth makes a Wisdom ({@skill Perception}) check."
+					]
+				},
+				{
+					"name": "Tail Swipe",
+					"entries": [
+						"The aboleth makes one tail attack."
+					]
+				},
+				{
+					"name": "Psychic Drain (Costs 2 Actions)",
+					"entries": [
+						"One creature {@condition charmed} by the aboleth takes 10 ({@damage 3d6}) psychic damage, and the aboleth regains hit points equal to the damage the creature takes."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Aboleth",
+				"source": "MM"
+			},
+			"environment": [
+				"underdark"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/aboleth.mp3"
+			},
+			"traitTags": [
+				"Amphibious"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"languageTags": [
+				"DS",
+				"TP"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"conditionInflictLegendary": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Aboleth",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Aboleth",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Before the coming of the gods, aboleths lurked in primordial oceans and underground lakes. They reached out with their minds and seized control of the burgeoning life-forms of the mortal realm, making those creatures their slaves. Their dominance made them like gods. Then the true gods appeared, smashing the aboleths' empire and freeing their slaves. Aboleths have never forgotten.",
+									{
+										"name": "Eternal Memories",
+										"type": "entries",
+										"entries": [
+											"Aboleths have flawless memories. They pass on their knowledge and experience from generation to generation. Thus, the injury of their defeat by the gods remains perfectly preserved in their minds.",
+											"Aboleths' minds are treasure troves of ancient lore, recalling moments from prehistory with perfect clarity. They plot patiently and intricately across eons. Few creatures can conceive of the extent of an aboleth's plan.",
+											{
+												"name": "Gods in the Lake",
+												"entries": [
+													"Aboleths dwell in watery environments, including ocean abysses, deep lakes, and the Elemental Plane of Water. In these domains and the lands that adjoin them, aboleths are like gods, demanding worship and obedience from their subjects. When they consume other creatures, aboleths add the knowledge and experiences of their prey to their eternal memories. Aboleths use their telepathic powers to read the minds of creatures and know their desires. An aboleth uses this knowledge to gain a creature's loyalty, promising to fulfill such wants in exchange for obedience. Within its lair, the aboleth can further use its powers to override senses, granting creatures, such as its followers, the illusion of promised rewards."
+												],
+												"type": "entries"
+											}
+										]
+									},
+									{
+										"name": "Enemies of the Gods",
+										"type": "entries",
+										"entries": [
+											"The aboleths' fall from power is written in stark clarity on their flawless memories, for aboleths never truly die. If an aboleth's body is destroyed, its spirit returns to the Elemental Plane of Water, where a new body coalesces for it over days or months.",
+											"Ultimately, aboleths dream of overthrowing the gods and regaining control of the world. Aboleths have had untold eons to plot and to prepare their plans for perfect execution."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "insetReadaloud",
+						"entries": [
+							{
+								"type": "quote",
+								"entries": [
+									"Could it be that the aboleths are older than the gods... that before the divine ones came to be, such horrors shaped the multiverse? Now there's a chilling thought."
+								],
+								"by": "Vaqir Zekh'r, githzerai philosopher and author of {@style The Far Realm: Real Yet Unreal|small-caps}"
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"name": "An Aboleth's Lair",
+						"entries": [
+							"Aboleths lair in subterranean lakes or the rocky depths of the ocean, often surrounded by the ruins of an ancient, fallen aboleth city. An aboleth spends most of its existence underwater, surfacing occasionally to treat with visitors or deranged worshipers."
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Lair Actions",
+								"entries": [
+									"When fighting inside its lair, an aboleth can invoke the ambient magic to take lair actions. On initiative count 20 (losing initiative ties), the aboleth takes a lair action to cause one of the following effects:",
+									{
+										"type": "list",
+										"items": [
+											"The aboleth casts {@spell phantasmal force} (no components required) on any number of creatures it can see within 60 feet of it. While maintaining {@status concentration} on this effect, the aboleth can't take other lair actions. If a target succeeds on the saving throw or if the effect ends for it, the target is immune to the aboleth's phantasmal force lair action for the next 24 hours, although such a creature can choose to be affected.",
+											"Pools of water within 90 feet of the aboleth surge outward in a grasping tide. Any creature on the ground within 20 feet of such a pool must succeed on a {@dc 14} Strength saving throw or be pulled up to 20 feet into the water and knocked {@condition prone}. The aboleth can't use this lair action again until it has used a different one.",
+											"Water in the aboleth's lair magically becomes a conduit for the creature's rage. The aboleth can target any number of creatures it can see in such water within 90 feet of it. A target must succeed on a {@dc 14} Wisdom saving throw or take 7 ({@damage 2d6}) psychic damage. The aboleth can't use this lair action again until it has used a different one."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Regional Effects",
+								"entries": [
+									"The region containing an aboleth's lair is warped by the creature's presence, which creates one or more of the following effects:",
+									{
+										"type": "list",
+										"items": [
+											"Underground surfaces within 1 mile of the aboleth's lair are slimy and wet and are {@quickref difficult terrain||3}.",
+											"Water sources within 1 mile of the lair are supernaturally fouled. Enemies of the aboleth that drink such water vomit it within minutes.",
+											"As an action, the aboleth can create an illusory image of itself within 1 mile of the lair. The copy can appear at any location the aboleth has seen before or in any location a creature {@condition charmed} by the aboleth can currently see. Once created, the image lasts for as long as the aboleth maintains {@status concentration}, as if {@status concentration||concentrating} on a spell. Although the image is intangible, it looks, sounds, and can move like the aboleth. The aboleth can sense, speak, and use telepathy from the image's position as if present at that position. If the image takes any damage, it disappears."
+										]
+									},
+									"If the aboleth dies, the first two effects fade over the course of {@dice 3d10} days."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Aboleth.webp"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"A",
+				"B",
+				"Y"
+			],
+			"damageTagsLegendary": [
+				"Y"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
+			"savingThrowForcedLegendary": [
+				"intelligence",
+				"strength",
+				"wisdom"
+			]
+		}
+	],
+	"table": [
+		{
+			"type": "table",
+			"name": "Plains Spring Weather Table",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"colLabels": [
+				"{@dice d100}",
+				"Weather/Temperature",
+				"Effect (Simple)",
+				"Effect (Precise)"
+			],
+			"colStyles": [
+				"col-1 text-center",
+				"text-align-left col-2",
+				"text-align-left col-3",
+				"text-align-left col-2"
+			],
+			"rows": [
+				[
+					"01-05",
+					"Tornados",
+					"Disadvantage on Fishing Table Rolls</br>Disadvantage on Fishing Checks",
+					"-15 to Fishing Table Rolls</br>-3 to Fishing Checks"
+				],
+				[
+					"06-10",
+					"Severe Thunderstorms",
+					"Disadvantage on Fishing Table Rolls",
+					"-10 to Fishing Table Rolls"
+				],
+				[
+					"11-20",
+					"Scattered Thunderstorms",
+					"Disadvantage on Fishing Table Rolls",
+					"-5 to Fishing Table Rolls"
+				],
+				[
+					"21-35",
+					"Scattered Showers, High Wind",
+					"Disadvantage on Fishing Table Rolls",
+					"-1 to Fishing Table Rolls"
+				],
+				[
+					"36-65",
+					"Fair Weather",
+					"Neutral",
+					"No Effect"
+				],
+				[
+					"66-79",
+					"Overcast",
+					"Advantage on Fishing Table Rolls",
+					"+1 to Fishing Table Rolls"
+				],
+				[
+					"80-89",
+					"Light Rainfall",
+					"Advantage on Fishing Table Rolls",
+					"+3 to Fishing Table Rolls"
+				],
+				[
+					"90-94",
+					"Fog",
+					"Advantage on Fishing Table Rolls",
+					"+5 to Fishing Table Rolls"
+				],
+				[
+					"95-100",
+					"Overcast, Light Rainfall",
+					"Advantage on Fishing Table Rolls",
+					"+10 to Fishing Table Rolls"
+				]
+			]
+		},
+		{
+			"type": "table",
+			"name": "Plains Summer Weather Table",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"colLabels": [
+				"d100",
+				"Weather/Temperature",
+				"Effect (Simple)",
+				"Effect (Precise)"
+			],
+			"colStyles": [
+				"col-1 text-center",
+				"text-align-left col-2",
+				"text-align-left col-3",
+				"text-align-left col-2"
+			],
+			"rows": [
+				[
+					"01-05",
+					"High Humidity",
+					"Disadvantage on Fishing Table Rolls</br>Disadvantage on Fishing Checks",
+					"-15 to Fishing Table Rolls</br>-3 to Fishing Checks"
+				],
+				[
+					"06-10",
+					"Extreme Heat",
+					"Disadvantage on Fishing Table Rolls",
+					"-10 to Fishing Table Rolls"
+				],
+				[
+					"11-20",
+					"Dust Devils",
+					"Disadvantage on Fishing Table Rolls",
+					"-5 to Fishing Table Rolls"
+				],
+				[
+					"21-35",
+					"Humidity",
+					"Disadvantage on Fishing Table Rolls",
+					"-1 to Fishing Table Rolls"
+				],
+				[
+					"36-65",
+					"Fair Weather",
+					"Neutral",
+					"No Effect"
+				],
+				[
+					"66-79",
+					"Overcast",
+					"Advantage on Fishing Table Rolls",
+					"+1 to Fishing Table Rolls"
+				],
+				[
+					"80-89",
+					"Scattered Showers",
+					"Advantage on Fishing Table Rolls",
+					"+3 to Fishing Table Rolls"
+				],
+				[
+					"90-94",
+					"Fog",
+					"Advantage on Fishing Table Rolls",
+					"+5 to Fishing Table Rolls"
+				],
+				[
+					"95-100",
+					"Overcast, Light Rainfall",
+					"Advantage on Fishing Table Rolls",
+					"+10 to Fishing Table Rolls"
+				]
+			]
+		},
+		{
+			"type": "table",
+			"name": "Plains Fall Weather Table",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"colLabels": [
+				"d100",
+				"Weather/Temperature",
+				"Effect (Simple)",
+				"Effect (Precise)"
+			],
+			"colStyles": [
+				"col-1 text-center",
+				"text-align-left col-2",
+				"text-align-left col-3",
+				"text-align-left col-2"
+			],
+			"rows": [
+				[
+					"01-05",
+					"Sleet Storm",
+					"Disadvantage on Fishing Table Rolls</br>Disadvantage on Fishing Checks",
+					"-15 to Fishing Table Rolls</br>-3 to Fishing Checks"
+				],
+				[
+					"06-10",
+					"Frost, no sunlight",
+					"Disadvantage on Fishing Table Rolls",
+					"-10 to Fishing Table Rolls"
+				],
+				[
+					"11-20",
+					"Freezing Rain",
+					"Disadvantage on Fishing Table Rolls",
+					"-5 to Fishing Table Rolls"
+				],
+				[
+					"21-35",
+					"Heavy Rain",
+					"Disadvantage on Fishing Table Rolls",
+					"-1 to Fishing Table Rolls"
+				],
+				[
+					"36-65",
+					"Fair Weather",
+					"Neutral",
+					"No Effect"
+				],
+				[
+					"66-79",
+					"Light Rain",
+					"Advantage on Fishing Table Rolls",
+					"+1 to Fishing Table Rolls"
+				],
+				[
+					"80-89",
+					"Light Snowfall",
+					"Advantage on Fishing Table Rolls",
+					"+3 to Fishing Table Rolls"
+				],
+				[
+					"90-94",
+					"Sunlight, Partly Cloudy",
+					"Advantage on Fishing Table Rolls",
+					"+5 to Fishing Table Rolls"
+				],
+				[
+					"95-100",
+					"Sunlight, No Overcast",
+					"Advantage on Fishing Table Rolls",
+					"+10 to Fishing Table Rolls"
+				]
+			]
+		},
+		{
+			"type": "table",
+			"name": "Plains Winter Weather Table",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"colLabels": [
+				"d100",
+				"Weather/Temperature",
+				"Effect (Simple)",
+				"Effect (Precise)"
+			],
+			"colStyles": [
+				"col-1 text-center",
+				"text-align-left col-2",
+				"text-align-left col-3",
+				"text-align-left col-2"
+			],
+			"rows": [
+				[
+					"01-05",
+					"Blizzard",
+					"Disadvantage on Fishing Table Rolls</br>Disadvantage on Fishing Checks",
+					"-15 to Fishing Table Rolls</br>-3 to Fishing Checks"
+				],
+				[
+					"06-10",
+					"Snowstorm",
+					"Disadvantage on Fishing Table Rolls",
+					"-10 to Fishing Table Rolls"
+				],
+				[
+					"11-20",
+					"Sleet",
+					"Disadvantage on Fishing Table Rolls",
+					"-5 to Fishing Table Rolls"
+				],
+				[
+					"21-35",
+					"Freezing Rain",
+					"Disadvantage on Fishing Table Rolls",
+					"-1 to Fishing Table Rolls"
+				],
+				[
+					"36-65",
+					"Fair Weather",
+					"Neutral",
+					"No Effect"
+				],
+				[
+					"66-79",
+					"Sunlight, Overcast",
+					"Advantage on Fishing Table Rolls",
+					"+1 to Fishing Table Rolls"
+				],
+				[
+					"80-89",
+					"Sunlight, Partly Cloudy",
+					"Advantage on Fishing Table Rolls",
+					"+3 to Fishing Table Rolls"
+				],
+				[
+					"90-94",
+					"Sunlight, No Overcast",
+					"Advantage on Fishing Table Rolls",
+					"+5 to Fishing Table Rolls"
+				],
+				[
+					"95-100",
+					"Heat Snap",
+					"Advantage on Fishing Table Rolls",
+					"+10 to Fishing Table Rolls"
+				]
+			]
+		},
+		{
+			"type": "table",
+			"name": "Plains Pond Fishing",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"colLabels": [
+				"{@dice d100 + #$prompt_number$#}",
+				"Caught",
+				"Weight",
+				"Level",
+				"DC",
+				"Attempts",
+				"Successes",
+				"XP",
+				"Market Value"
+			],
+			"colStyles": [
+				"col-1 text-center",
+				"",
+				"col-1",
+				"col-1 text-center",
+				"col-1 text-center",
+				"col-1 text-center",
+				"col-1 text-center",
+				"text-right col-1",
+				"text-right col-1"
+			],
+			"rows": [
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 1,
+							"max": 35,
+							"pad": true
+						}
+					},
+					"Nothing",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 36,
+							"max": 45,
+							"pad": true
+						}
+					},
+					"Junk (roll on {@table Plains Junk Table|WhySlayDragonsFishingIo})",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 46,
+							"max": 55,
+							"pad": true
+						}
+					},
+					"{@creature Chimera Chub|WhySlayDragonsFishingIo}",
+					"{@dice 1d4} lbs",
+					"1/8",
+					"8",
+					"1",
+					"1",
+					"2 xp",
+					"2 cp"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 56,
+							"max": 65,
+							"pad": true
+						}
+					},
+					"{@creature Mirrorscale Minnow|WhySlayDragonsFishingIo}",
+					"0 lbs",
+					"1/4",
+					"9",
+					"1",
+					"1",
+					"5 xp",
+					"1 sp"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 66,
+							"max": 75,
+							"pad": true
+						}
+					},
+					"{@creature Deathskull Dace|WhySlayDragonsFishingIo}",
+					"1 lbs",
+					"1/2",
+					"10",
+					"1",
+					"1",
+					"10 xp",
+					"2 sp"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 76,
+							"max": 80,
+							"pad": true
+						}
+					},
+					"{@creature Pearlscale Goldfish|WhySlayDragonsFishingIo}",
+					"{@dice 1d4} lbs",
+					"1",
+					"11",
+					"1",
+					"1",
+					"20 xp",
+					"4 sp"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 81,
+							"max": 85,
+							"pad": true
+						}
+					},
+					"{@creature Gatorfang Gar|WhySlayDragonsFishingIo}",
+					"{@dice 10d8+100} lbs",
+					"2",
+					"12",
+					"3",
+					"2",
+					"67 xp",
+					"4 gp"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 86,
+							"max": 90,
+							"pad": true
+						}
+					},
+					"{@creature Dazzling Carp|WhySlayDragonsFishingIo}",
+					"{@dice 10d8+100} lbs",
+					"3",
+					"13",
+					"3",
+					"2",
+					"105 xp",
+					"15 gp"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 91,
+							"max": 95,
+							"pad": true
+						}
+					},
+					"{@creature Venomserpent|WhySlayDragonsFishingIo}",
+					"{@dice 2d8+10} lbs",
+					"4",
+					"14",
+					"3",
+					"2",
+					"165 xp",
+					"30 gp"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 96,
+							"max": 100,
+							"pad": true
+						}
+					},
+					"{@creature Dragonkoi|WhySlayDragonsFishingIo}",
+					"{@dice 1d4+1} lbs",
+					"5",
+					"15",
+					"5",
+					"3",
+					"360 xp",
+					"80 gp"
+				],
+				[
+					"100+",
+					"Angler Determines Result",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A"
+				]
+			]
+		},
+		{
+			"type": "table",
+			"name": "Plains Lake Fishing",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"colLabels": [
+				"{@dice d100 + #$prompt_number$#}",
+				"Caught",
+				"Weight",
+				"Level",
+				"DC",
+				"Attempts",
+				"Successes",
+				"XP",
+				"Market Value"
+			],
+			"colStyles": [
+				"col-1 text-center",
+				"",
+				"col-1",
+				"col-1 text-center",
+				"col-1 text-center",
+				"col-1 text-center",
+				"col-1 text-center",
+				"text-right col-1",
+				"text-right col-1"
+			],
+			"rows": [
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 1,
+							"max": 35,
+							"pad": true
+						}
+					},
+					"Nothing",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 36,
+							"max": 45,
+							"pad": true
+						}
+					},
+					"Junk (roll on {@table Plains Junk Table|WhySlayDragonsFishingIo})",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 46,
+							"max": 55,
+							"pad": true
+						}
+					},
+					"{@creature Chimera Chub|WhySlayDragonsFishingIo}",
+					"{@dice 1d4} lbs.",
+					"1/8",
+					"8",
+					"1",
+					"1",
+					"2 xp",
+					"2 cp"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 56,
+							"max": 65,
+							"pad": true
+						}
+					},
+					"{@creature Barbaric Bluegill|WhySlayDragonsFishingIo}",
+					"{@dice 1d4} lbs.",
+					"1/4",
+					"9",
+					"1",
+					"1",
+					"5 xp",
+					"1 sp"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 66,
+							"max": 75,
+							"pad": true
+						}
+					},
+					"{@creature Boulderbass|WhySlayDragonsFishingIo}",
+					"{@dice 1d4} lbs.",
+					"1/2",
+					"10",
+					"1",
+					"1",
+					"10 xp",
+					"2 sp"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 76,
+							"max": 80,
+							"pad": true
+						}
+					},
+					"{@creature Beaconfish|WhySlayDragonsFishingIo}",
+					"{@dice 1d4} lbs.",
+					"1",
+					"11",
+					"3",
+					"2",
+					"30 xp",
+					"6 sp"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 81,
+							"max": 85,
+							"pad": true
+						}
+					},
+					"{@creature Whiskerfish|WhySlayDragonsFishingIo}",
+					"{@dice 10d8+85} lbs.",
+					"2",
+					"12",
+					"3",
+					"2",
+					"67 xp",
+					"4 gp"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 86,
+							"max": 90,
+							"pad": true
+						}
+					},
+					"{@creature Bell-Tailed Frightfish|WhySlayDragonsFishingIo}",
+					"{@dice 1d4} lbs.",
+					"3",
+					"13",
+					"2",
+					"2",
+					"140 xp",
+					"20 gp"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 91,
+							"max": 95,
+							"pad": true
+						}
+					},
+					"{@creature Venomserpent|WhySlayDragonsFishingIo}",
+					"{@dice 2d8+10} lbs.",
+					"4",
+					"14",
+					"2",
+					"2",
+					"220 xp",
+					"40 gp"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 96,
+							"max": 100,
+							"pad": true
+						}
+					},
+					"{@creature Anvil Ironfish|WhySlayDragonsFishingIo}",
+					"{@dice 6d10+60} lbs.",
+					"5",
+					"15",
+					"4",
+					"3",
+					"450 xp",
+					"100 gp"
+				],
+				[
+					"100+",
+					"Angler Determines the Result",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A"
+				]
+			]
+		},
+		{
+			"type": "table",
+			"name": "Plains Stream Fishing",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"colLabels": [
+				"{@dice d100 + #$prompt_number$#}",
+				"Caught",
+				"Weight",
+				"Level",
+				"DC",
+				"Attempts",
+				"Successes",
+				"XP",
+				"Market Value"
+			],
+			"colStyles": [
+				"col-1 text-center",
+				"",
+				"col-1",
+				"col-1 text-center",
+				"col-1 text-center",
+				"col-1 text-center",
+				"col-1 text-center",
+				"text-right col-1",
+				"text-right col-1"
+			],
+			"rows": [
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 1,
+							"max": 35,
+							"pad": true
+						}
+					},
+					"Nothing",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 36,
+							"max": 45,
+							"pad": true
+						}
+					},
+					"Junk (roll on {@table Plains Junk Table|WhySlayDragonsFishingIo})",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 46,
+							"max": 65,
+							"pad": true
+						}
+					},
+					"{@creature Rainbow Frog|WhySlayDragonsFishingIo}",
+					"1 lbs.",
+					"1/2",
+					"10",
+					"1",
+					"1",
+					"10 xp",
+					"2 sp"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 66,
+							"max": 85,
+							"pad": true
+						}
+					},
+					"{@creature Crimsonfang Crawfish|WhySlayDragonsFishingIo}",
+					"0 lbs.",
+					"2",
+					"12",
+					"3",
+					"2",
+					"67 xp",
+					"4 gp"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 86,
+							"max": 100,
+							"pad": true
+						}
+					},
+					"{@creature Steamturtle|WhySlayDragonsFishingIo}",
+					"{@dice 10d8+100} lbs.",
+					"3",
+					"13",
+					"5",
+					"3",
+					"140 xp",
+					"20 gp"
+				],
+				[
+					"100+",
+					"Angler Determines Result",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A",
+					"N/A"
+				]
+			]
+		},
+		{
+			"type": "table",
+			"name": "Plains Junk Table",
+			"source": "WhySlayDragonswhenyoucouldbeFISHING",
+			"colLabels": [
+				"{@dice d100}",
+				"Caught",
+				"Description",
+				"Market Value"
+			],
+			"colStyles": [
+				"col-1 text-center",
+				"text-align-left",
+				"text-align-left",
+				"col-1 text-right"
+			],
+			"rows": [
+				[
+					"01-02",
+					"{@creature Boot Mimic|WhySlayDragonsFishingIo}",
+					"Terrible luck befalls you as you reel in what appears to be a dirty black leather boot at first glance. Unfortunately, as a pair of wicked teeth and a snake-like tongue appear at the heel of the boot, you soon realize the true extent of your misfortune.",
+					"0 gp"
+				],
+				[
+					"03-04",
+					"Longsword Hilt (Rusted)",
+					"The hilt of a longsword that's seen better days. Rusted over, there's little more to do with this weapon than just throwing it away.",
+					"0 gp"
+				],
+				[
+					"05-06",
+					"Broken Boomerang (Fredi)",
+					"Half of a child's boomerang, worn and weathered by the water. There are deep carved-out grooves near the break that seem to spell half of a name, \"Fredi...\"<br />This item is unique and can only be caught once. If this entry is rolled again, add {@dice 1d20} to the Junk Table Roll.",
+					"0 gp"
+				],
+				[
+					"07-08",
+					"Star Shaped Music Box (Broken)",
+					"An elegant mahogany music box in the shape of a star, warped and grown over with algae and lost to time. Broken in its current state, it cannot play music.",
+					"0 gp"
+				],
+				[
+					"09-10",
+					"Rusted Iron Teapot",
+					"It has long since served its last tea time.",
+					"0 gp"
+				],
+				[
+					"11-12",
+					"Cracked Rainbow Pearl",
+					"Once an opulent pearl, a crack down the middle has rendered it useless.",
+					"10 gp"
+				],
+				[
+					"13-14",
+					"Oversized Undergarments",
+					"A sizable pair of oversized undergarments with big red polka dots consuming its patchwork stitching.",
+					"0 gp"
+				],
+				[
+					"15-16",
+					"Chicken Griffon Bone (Drumstick)",
+					"A discarded bone of a chicken griffon from the beast's drumstick. Fish have devoured what meat was previously upon it.",
+					"0 gp"
+				],
+				[
+					"17-18",
+					"Yellow Glass Eye (Blinking)",
+					"A glass eye with a yellow iris. It unnervingly blinks every minute on the dot.",
+					"10 gp"
+				],
+				[
+					"19-20",
+					"{@item Potion of Healing}",
+					"You regain {@dice 2d4 + 2} hit points when you drink this potion. The potion's red liquid glimmers when agitated.",
+					"50 gp"
+				],
+				[
+					"21-22",
+					"Wooden Pirate Scimitar",
+					"A wooden scimitar, likely made for a child. Despite being in the water, the wood is undisturbed and dry.",
+					"5 cp"
+				],
+				[
+					"23-24",
+					"Pink Owlbear Plush (Soggy)",
+					"A child's plush doll of a pink owlbear, drenched in water and covered in dirt and moss. You can't help but feel sorry for it.",
+					"0 gp"
+				],
+				[
+					"25-26",
+					"Empty Dragon Whiskey Bottle",
+					"An empty glass bottle of dragon whiskey, missing its cork. Holds half a liter of liquid.",
+					"0 gp"
+				],
+				[
+					"27-28",
+					"Patchy Coin Pouch",
+					"A little coin pouch patched over multiple times.",
+					"{@dice 2d4} sp"
+				],
+				[
+					"29-30",
+					"Mangled Fishing Net",
+					"A fishing net caught and ripped beyond repair, discarded by a rude angler.",
+					"0 gp"
+				],
+				[
+					"31-32",
+					"Broken Wagon Wheel",
+					"The wagon wheel of a cart - snapped in half.",
+					"0 gp"
+				],
+				[
+					"33-34",
+					"Tiny Sock",
+					"A discarded sock. Dainty hearts are patterned on the outside.",
+					"0 gp"
+				],
+				[
+					"35-36",
+					"Roped Spectacles",
+					"A pair of wire-framed spectacles, held together by a weak rope at its bridge.",
+					"0 gp"
+				],
+				[
+					"37-38",
+					"Smiling Pet Pebble",
+					"A rock with scratches that mimic eyes and a mouth. You feel happy when this pebble is in your pocket.",
+					"0 gp"
+				],
+				[
+					"39-40",
+					"{@item Potion of Greater Healing}",
+					"You regain {@dice 4d4 + 4} hit points when you drink this potion. The potion's red liquid glimmers when agitated.",
+					""
+				],
+				[
+					"41-42",
+					"Discarded Fish Hook Amalgamation",
+					"Hundreds of discarded fish hooks linked to one other in a ball of sharp metal.",
+					"0 gp"
+				],
+				[
+					"43-44",
+					"Unicorn Umbrella",
+					"An umbrella with a faux unicorn horn for its tip. Great for protecting yourself from the rain.",
+					"1 gp"
+				],
+				[
+					"45-46",
+					"Bomb (Dud)",
+					"An otherwise ordinary-looking bomb, this item is a dud and will not function. An Intelligence Check ({@dc 10}) reveals this.",
+					"0 gp"
+				],
+				[
+					"47-48",
+					"Black Heeled Boots",
+					"A pair of black heel boots, connected by a thin strand of sharp leather.",
+					"1 gp"
+				],
+				[
+					"49-50",
+					"Ivy-Embroidered Handkerchief",
+					"A silken handkerchief with gentle ivy-green patterns on its side.",
+					"1 gp"
+				],
+				[
+					"51-52",
+					"Elegant Undergarments",
+					"A pair of simple undergarments with bright green and orange stripes across its cloth.",
+					"0 gp"
+				],
+				[
+					"53-54",
+					"Cracked Glass Vial (Green Fluid)",
+					"A glass vial with a simple cork. A crack is running up this vial, dripping a noxious green liquid. Attempting to drink the vial requires a Constitution Saving Throw ({@dc 10}). On Failure: The target is Poisoned for 1 hour.",
+					"10 gp"
+				],
+				[
+					"55-56",
+					"{@item Javelin|PHB}",
+					"Simple Melee Weapon, {@damage 1d6} piercing, thrown (30/120)",
+					"5 sp"
+				],
+				[
+					"57-58",
+					"Bundle of Fishing Wire",
+					"A bundle of fishing wire gathered together in an unassailable knot.",
+					"0 gp"
+				],
+				[
+					"59-60",
+					"Rusted Giant's Armor",
+					"A piece of heavy armor, likely belonging to a giant. Rusted over, it crumbles to dust in your hand.",
+					"0 gp"
+				],
+				[
+					"61-62",
+					"Wooden Ale Mug",
+					"A mug from the local tavern, the wood is only recently warped. A good cleaning might salvage it.",
+					"1 gp"
+				],
+				[
+					"63-64",
+					"Local Swimmer",
+					"A local commoner who unfortunately got hooked by your line during their swim - they're not happy about the hook currently in their body.<br />A Charisma Check ({@skill Persuasion}, {@skill Deception}, or {@skill Intimidation}) ({@dc 10}) is required to maintain a neutral disposition with the swimmer. The Local Swimmer uses the {@creature Commoner} Stat Block.",
+					"0 gp"
+				],
+				[
+					"65-66",
+					"Fossilized Fish",
+					"A fish that perished and became entombed within layers of hard sediment. Roll on the Fish Table of this Environment. If the result is a fish, these bones are worth 1/10th the Market Value of the fish. Otherwise, it is considered worthless.",
+					"Varies"
+				],
+				[
+					"67-68",
+					"{@item Bomb}",
+					"As an action, a character can light this bomb and throw it at a point up to 60 feet away. Each creature within 5 feet of that point must succeed on a {@dc 12} Dexterity saving throw or take {@damage 3d6} fire damage.",
+					"150 gp"
+				],
+				[
+					"69-70",
+					"Kitchen Sink",
+					"A kitchen sink from a local village. It's still being determined how it got here.",
+					"0 gp"
+				],
+				[
+					"71-72",
+					"Wishbone (Chimerachick)",
+					"The wishbone of a Chimerachick, an angry and unbearable species of chicken. Rumored to bring bad luck to the person who pulls the smaller bone when split.",
+					"0 gp"
+				],
+				[
+					"73-74",
+					"Dual Ended Cutlery",
+					"A strange wooden cutlery, with a carved spoon at one end and a fork at the other. Likely once belonged to a passionate eater.",
+					"5 sp"
+				],
+				[
+					"75-76",
+					"Silver Clockwork Pocketwatch (Broken)",
+					"A little silver pocket watch with gear-like patterns in its design. Currently, it does not function.",
+					"1 gp"
+				],
+				[
+					"77-78",
+					"Stone Chunks of Former Sending",
+					"An intentionally broken sending stone, broken up into chunks. It must have been a bad breakup.",
+					"0 gp"
+				],
+				[
+					"79-80",
+					"Leather Coin Purse",
+					"A well-crafted leather coin purse of high quality which can function perfectly well after drying.",
+					"{@dice 1d10} gp"
+				],
+				[
+					"81-82",
+					"Jagged Arrowhead",
+					"A sharp rock that has been carved into a jagged point - likely from an ancestor of the past.",
+					"1 gp"
+				],
+				[
+					"83-84",
+					"Sylvan Gold Earring",
+					"A golden earring with a floral shape and a simple pearl inlaid at its base.",
+					"10 gp"
+				],
+				[
+					"85-86",
+					"{@item Shortsword|PHB}",
+					"Martial Melee Weapon, {@damage 1d6} piercing, finesse, light",
+					"10 gp"
+				],
+				[
+					"87-88",
+					"{@item Thieves' Tools|PHB}",
+					"This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow-bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks.",
+					"25 gp"
+				],
+				[
+					"89-90",
+					"Broken Boomerang (rico)",
+					"Half of a child's boomerang, worn and weathered by the water. There are deep carved-out grooves near the break that seem to spell half of a name, \"...rico\"<br />This item is unique and can only be caught once. If this entry is rolled again, subtract {@dice 1d20} to the Junk Table Roll.",
+					"0 gp"
+				],
+				[
+					"91-92",
+					"{@item Net|PHB}",
+					"Martial Ranged Weapon, thrown (5/15), special",
+					"1 gp"
+				],
+				[
+					"93-94",
+					"{@item Hempen Rope (50 feet)|PHB}",
+					"Rope, whether made of hemp or silk, has 2 hit points and can be burst with a {@dc 17} Strength check.",
+					"1 gp"
+				],
+				[
+					"95-96",
+					"Engagement Ring",
+					"A black velvet box, molded and mossy on the outside but airtight on the inside. Within its box is a golden band with a script reading \"Forever and for Always\". Appears to have never been worn.<br />This item is unique and can only be caught once. If this entry is rolled again, subtract {@dice 1d20} from the Junk Table Roll.",
+					"30 gp"
+				],
+				[
+					"97-98",
+					"{@item Environmental Bobber (Plains)|WhySlayDragonsFishingIo}",
+					"Wondrous item, common (consumable)",
+					"1 gp"
+				],
+				[
+					"99-100",
+					"{@item Enchanted Mounted Fish|WhySlayDragonsFishingIo}",
+					"Wondrous item, uncommon",
+					"200 gp"
+				]
+			]
+		}
+	]
+}
